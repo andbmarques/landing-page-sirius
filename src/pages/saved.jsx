@@ -43,9 +43,6 @@ const Saved = () => {
           </VStack>
           <VStack>
             <Fade bottom text>
-              <Text textAlign="center" color="gray.500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </Text>
               <Heading
                 fontSize={["4xl", "4xl", "6xl"]}
                 textAlign="center"
@@ -53,6 +50,9 @@ const Saved = () => {
               >
                 $4.000.000
               </Heading>
+              <Text textAlign="center" color="gray.500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </Text>
             </Fade>
           </VStack>
         </VStack>
