@@ -43,7 +43,7 @@ const Hero = () => {
 
       <HStack my="5" textAlign="justify" px={["10", "10", "25%"]}>
         <Fade cascade left>
-          <Text color="whiteAlpha.700">
+          <Text textAlign='center' color="whiteAlpha.700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
             hendrerit nibh sed magna sagittis malesuada. Nulla posuere, eros ac
             gravida tincidunt, enim dolor egestas diam, ac rutrum elit nisl ac
