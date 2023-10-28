@@ -11,7 +11,13 @@ import { Fade } from "react-reveal";
 
 const Hero = () => {
   return (
-    <VStack alignItems="center" justifyContent="center" w="100%" h="70%">
+    <VStack
+      alignItems="center"
+      justifyContent="center"
+      pt={["8", "0", "0", "0"]}
+      w="100%"
+      h={["100%", "70%"]}
+    >
       <Fade top cascade>
         <Text
           border={"2px solid"}
@@ -20,30 +26,37 @@ const Hero = () => {
           borderRadius="full"
           color="blue.700"
           mb="10"
-          fontWeight='bold'
+          fontWeight="bold"
         >
           Lorem ipsum!
         </Text>
       </Fade>
-      <HStack px="10" justifyContent="center" wrap="wrap" color="white">
+      <HStack
+        textAlign="center"
+        px="10"
+        justifyContent="center"
+        wrap="wrap"
+        color="white"
+      >
         <Fade top cascade>
-          <Heading  lineHeight='3' fontSize={["4xl", "4xl", "6xl"]}>
+          <Heading lineHeight="1" fontSize={["3xl", "4xl", "4xl", "6xl"]}>
             Lorem ipsum dolor sit{" "}
           </Heading>
           <Heading
             mx={["0", "0", "2"]}
-            fontSize={["4xl", "4xl", "6xl"]}
+            fontSize={["3xl", "4xl", "6xl"]}
             color="blue.500"
+            lineHeight="1"
           >
             amet
           </Heading>
-          <Heading fontSize={["4xl", "4xl", "6xl"]}>.</Heading>
+          <Heading lineHeight="1" fontSize={["3xl", "4xl", "6xl"]}>.</Heading>
         </Fade>
       </HStack>
 
       <HStack my="5" textAlign="justify" px={["10", "10", "25%"]}>
         <Fade cascade left>
-          <Text textAlign='center' color="whiteAlpha.700">
+          <Text textAlign="center" color="whiteAlpha.700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
             hendrerit nibh sed magna sagittis malesuada. Nulla posuere, eros ac
             gravida tincidunt, enim dolor egestas diam, ac rutrum elit nisl ac
@@ -57,14 +70,14 @@ const Hero = () => {
           Button
         </Button>
       </Fade>
-        <HStack  gap='10' mt='16' fontSize="3xl">
-          <Fade cascade bottom>
-            <Icon cursor='pointer' color="whiteAlpha.500" as={GithubLogo} />
-            <Icon cursor='pointer' color="whiteAlpha.500" as={InstagramLogo} />
-            <Icon cursor='pointer' color="whiteAlpha.500" as={FacebookLogo} />
-            <Icon cursor='pointer' color="whiteAlpha.500" as={TwitterLogo} />
-          </Fade>
-        </HStack>
+      <HStack gap="10" mt="16" fontSize="3xl">
+        <Fade cascade bottom>
+          <Icon cursor="pointer" color="whiteAlpha.500" as={GithubLogo} />
+          <Icon cursor="pointer" color="whiteAlpha.500" as={InstagramLogo} />
+          <Icon cursor="pointer" color="whiteAlpha.500" as={FacebookLogo} />
+          <Icon cursor="pointer" color="whiteAlpha.500" as={TwitterLogo} />
+        </Fade>
+      </HStack>
     </VStack>
   );
 };

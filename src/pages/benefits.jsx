@@ -18,9 +18,11 @@ const Benefits = () => {
       py="10"
       w="100%"
       h="100%"
+
+      
     >
       <Fade top>
-        <Heading color="white">
+        <Heading my={[ '-10', '-2', '0' ]} color="white">
           <Icon
             fontSize={["lg", "lg", "2xl"]}
             as={Star}
@@ -39,16 +41,16 @@ const Benefits = () => {
       <HStack
         justifyContent="center"
         alignItems="center"
-        p="10"
-        gap={["5", "5", "10"]}
+        p={["5", "5", "10"]}
+        gap={["5", "5", "16"]}
         wrap="wrap"
         px="56"
       >
         <Fade bottom cascade>
           <Stack
-            p={["5", "5", "8"]}
+            p={["2", "5", "10"]}
             border="2px solid"
-            w={["calc(90vw)", "calc(90vw)", "calc(25vw)"]}
+            w={["calc(90vw)", "calc(90vw)", "calc(30vw)"]}
             h={["auto", "auto", "auto"]}
             borderRadius="lg"
             borderColor="gray.700"
@@ -59,7 +61,7 @@ const Benefits = () => {
                 as={Rocket}
                 color="blue.500"
                 weight={"duotone"}
-                fontSize={["5xl", "5xl", "6xl"]}
+                fontSize={["2xl", "5xl", "6xl"]}
               />
               <Heading
                 color="whiteAlpha.900"
@@ -78,9 +80,9 @@ const Benefits = () => {
         </Fade>
         <Fade bottom cascade>
           <Stack
-            p={["5", "5", "8"]}
+            p={["2", "5", "10"]}
             border="2px solid"
-            w={["calc(90vw)", "calc(90vw)", "calc(25vw)"]}
+            w={["calc(90vw)", "calc(90vw)", "calc(30vw)"]}
             h={["auto", "auto", "auto"]}
             borderRadius="lg"
             borderColor="gray.700"
@@ -91,7 +93,7 @@ const Benefits = () => {
                 as={Globe}
                 color="blue.500"
                 weight={"duotone"}
-                fontSize={["5xl", "5xl", "6xl"]}
+                fontSize={["2xl", "5xl", "6xl"]}
               />
               <Heading
                 color="whiteAlpha.900"
@@ -110,9 +112,9 @@ const Benefits = () => {
         </Fade>
         <Fade bottom cascade>
           <Stack
-            p={["5", "5", "8"]}
+            p={["2", "5", "10"]}
             border="2px solid"
-            w={["calc(90vw)", "calc(90vw)", "calc(25vw)"]}
+            w={["calc(90vw)", "calc(90vw)", "calc(30vw)"]}
             h={["auto", "auto", "auto"]}
             borderRadius="lg"
             borderColor="gray.700"
@@ -123,7 +125,7 @@ const Benefits = () => {
                 as={Gear}
                 color="blue.500"
                 weight={"duotone"}
-                fontSize={["5xl", "5xl", "6xl"]}
+                fontSize={["2xl", "5xl", "6xl"]}
               />
               <Heading
                 color="whiteAlpha.900"
@@ -142,9 +144,9 @@ const Benefits = () => {
         </Fade>
         <Fade bottom cascade>
           <Stack
-            p={["5", "5", "8"]}
+            p={["2", "5", "10"]}
             border="2px solid"
-            w={["calc(90vw)", "calc(90vw)", "calc(25vw)"]}
+            w={["calc(90vw)", "calc(90vw)", "calc(30vw)"]}
             h={["auto", "auto", "auto"]}
             borderRadius="lg"
             borderColor="gray.700"
@@ -155,7 +157,7 @@ const Benefits = () => {
                 as={CurrencyDollar}
                 color="blue.500"
                 weight={"duotone"}
-                fontSize={["5xl", "5xl", "6xl"]}
+                fontSize={["2xl", "5xl", "6xl"]}
               />
               <Heading
                 color="whiteAlpha.900"

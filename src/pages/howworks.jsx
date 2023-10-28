@@ -24,6 +24,7 @@ const HowWorks = () => {
         w={"100%"}
         h="calc(100vh)"
         justifyContent="center"
+        
       >
         <VStack
           w={["100%", "100%", "35%"]}

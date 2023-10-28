@@ -7,6 +7,7 @@ import Saved from "./pages/saved";
 import HowWorks from "./pages/howworks";
 import Benefits from "./pages/benefits";
 import { useRef } from "react";
+import Footer from "./pages/footer";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Navbar />
         <Hero />
       </VStack>
-      <VStack bg="gray.900" w="100%" h="calc(100vh)">
+      <VStack bg="gray.900" w="100%" h="calc(100vh) ">
         <Saved />
       </VStack>
       <VStack bg="gray.900" w="100%" h="calc(100vh)">
@@ -33,6 +34,9 @@ function App() {
       </VStack>
       <VStack bg="gray.900" w="100%" h="calc(100vh)">
         <Calculator />
+      </VStack>
+      <VStack bg="gray.900" w="100%" h="calc(55vh)">
+        <Footer />
       </VStack>
     </VStack>
   );
