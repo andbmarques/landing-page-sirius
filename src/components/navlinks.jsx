@@ -1,17 +1,17 @@
 import { Button, Link } from "@chakra-ui/react";
 import React from "react";
 
-const Navlink = ({ children }) => {
+const Navlink = ({ children, onClick }) => {
     return (
-        <Link href="#" color='white'>
+        <Link onClick={onClick}  color='white'>
             { children }
         </Link>
     )
 }
 
-const Navbutton = ({ children }) => {
+const Navbutton = ({ children, onClick }) => {
     return (
-        <Button colorScheme='blue' px='6' borderRadius='lg' >
+        <Button onClick={onClick} colorScheme='blue' px='6' borderRadius='lg' >
             { children }
         </Button>
     )

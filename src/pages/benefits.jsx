@@ -18,11 +18,11 @@ const Benefits = () => {
       py="10"
       w="100%"
       h="100%"
-
-      
+      mt="-16"
+      id='benefits'
     >
       <Fade top>
-        <Heading my={[ '-10', '-2', '0' ]} color="white">
+        <Heading my={["-10", "-2", "0"]} color="white">
           <Icon
             fontSize={["lg", "lg", "2xl"]}
             as={Star}

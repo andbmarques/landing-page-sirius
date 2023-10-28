@@ -19,6 +19,45 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const menuButtonRef = useRef();
 
+  const goToHero = () => {
+    const element = document.getElementById("hero");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      onClose()
+    }
+  };
+
+  const goToAbout = () => {
+    const element = document.getElementById("about");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      onClose()
+    }
+  };
+
+  const goToBenefits = () => {
+    const element = document.getElementById("benefits");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      onClose()
+    }
+  };
+
+  const goToHowWorks = () => {
+    const element = document.getElementById("howworks");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      onClose()
+    }
+  };
+  const goToCalculator = () => {
+    const element = document.getElementById("calculator");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      onClose()
+    }
+  };
+
   return (
     <HStack
       justifyContent={["space-between"]}
@@ -29,11 +68,11 @@ const Navbar = () => {
     >
       <Logo />
       <HStack display={["none", "none", "flex"]} gap="10">
-        <Navlink>Início</Navlink>
-        <Navlink>About</Navlink>
-        <Navlink>Benefits</Navlink>
-        <Navlink>How it Works?</Navlink>
-        <Navbutton>Know More</Navbutton>
+        <Navlink onClick={goToHero}>Home</Navlink>
+        <Navlink onClick={goToAbout}>About</Navlink>
+        <Navlink onClick={goToBenefits}>Benefits</Navlink>
+        <Navlink onClick={goToHowWorks}>How it Works?</Navlink>
+        <Navbutton onClick={goToCalculator}>Know More</Navbutton>
       </HStack>
       <IconButton
         display={["flex", "flex", "none"]}
@@ -58,11 +97,11 @@ const Navbar = () => {
           </DrawerHeader>
           <DrawerBody bgColor="gray.900">
             <VStack py="10" gap="10">
-              <Navlink>Início</Navlink>
-              <Navlink>About</Navlink>
-              <Navlink>Benefits</Navlink>
-              <Navlink>How it works?</Navlink>
-              <Navbutton>Know More</Navbutton>
+              <Navlink onClick={goToHero}>Home</Navlink>
+              <Navlink onClick={goToAbout}>About</Navlink>
+              <Navlink onClick={goToBenefits}>Benefits</Navlink>
+              <Navlink onClick={goToHowWorks}>How it Works?</Navlink>
+              <Navbutton onClick={goToCalculator}>Know More</Navbutton>
             </VStack>
           </DrawerBody>
         </DrawerContent>

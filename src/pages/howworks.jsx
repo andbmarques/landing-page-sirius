@@ -18,13 +18,18 @@ import { Fade } from "react-reveal";
 
 const HowWorks = () => {
   return (
-    <VStack alignItems="start" justifyContent="start" w="100%" h="100%">
+    <VStack
+      id="howworks"
+      alignItems="start"
+      justifyContent="start"
+      w="100%"
+      h="100%"
+    >
       <Stack
         flexDirection={["column", "column", "row"]}
         w={"100%"}
         h="calc(100vh)"
         justifyContent="center"
-        
       >
         <VStack
           w={["100%", "100%", "35%"]}

@@ -28,7 +28,13 @@ import {
 
 const Calculator = () => {
   return (
-    <VStack alignItems="start" justifyContent="start" w="100%" h="100%">
+    <VStack
+      id="calculator"
+      alignItems="start"
+      justifyContent="start"
+      w="100%"
+      h="100%"
+    >
       <Stack
         flexDirection={["column", "column", "row"]}
         w={"100%"}
@@ -48,7 +54,13 @@ const Calculator = () => {
         >
           <Fade left>
             <Heading textAlign="center" my="2" color="white">
-               <Icon as={CaretRight} weight="bold" fontSize={['lg', 'lg', '2xl']} color='blue.600' /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <Icon
+                as={CaretRight}
+                weight="bold"
+                fontSize={["lg", "lg", "2xl"]}
+                color="blue.600"
+              />{" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Heading>
 
             <List fontSize={["xl", "2xl"]} color="white">

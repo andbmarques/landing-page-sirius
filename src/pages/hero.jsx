@@ -10,6 +10,12 @@ import React from "react";
 import { Fade } from "react-reveal";
 
 const Hero = () => {
+  const goToCalculator = () => {
+    const element = document.getElementById("calculator");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <VStack
       alignItems="center"
@@ -17,6 +23,7 @@ const Hero = () => {
       pt={["8", "0", "0", "0"]}
       w="100%"
       h={["100%", "70%"]}
+      id="hero"
     >
       <Fade top cascade>
         <Text
@@ -50,7 +57,9 @@ const Hero = () => {
           >
             amet
           </Heading>
-          <Heading lineHeight="1" fontSize={["3xl", "4xl", "6xl"]}>.</Heading>
+          <Heading lineHeight="1" fontSize={["3xl", "4xl", "6xl"]}>
+            .
+          </Heading>
         </Fade>
       </HStack>
 
@@ -66,7 +75,7 @@ const Hero = () => {
         </Fade>
       </HStack>
       <Fade cascade>
-        <Button colorScheme="blue" px="6" borderRadius="lg">
+        <Button onClick={goToCalculator} colorScheme="blue" px="6" borderRadius="lg">
           Button
         </Button>
       </Fade>
